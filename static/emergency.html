@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAOS IS LIFE - Emergency</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 style="color: #fff; text-shadow: 0 0 8px #0ff, 0 0 4px #ff0; font-family: 'Share Tech Mono', monospace;">EMERGENCY APP</h1>
+      <p style="color: #fff; font-size: 1.1rem;">Disaster guidance, but with the enthusiasm of a snarky teenager.</p>
+      <nav><a href="/" style="color: #f0f;">← Back to Home</a></nav>
+      <section>
+        <br>
+        <div class="button-row" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <button data-topic="fire" style="background: #f00; color: #fff;">Guidance for Fire</button>
+          <button data-topic="flood" style="background: #0ff; color: #000;">Guidance for Flood</button>
+          <button data-topic="power outage" style="background: #ff0; color: #000;">Guidance for Power Outage</button>
+        </div>
+        <article id="response" style="color: #0f0; font-size: 1.1rem; margin-top: 1.5rem;"></article>
+      </section>
+    </main>
+    <script src="/static/emergency.js" defer></script>
+  </body>
+</html>

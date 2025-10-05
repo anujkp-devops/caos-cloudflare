@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>CAOS IS LIFE - Dino</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 style="color: #fff; text-shadow: 0 0 8px #f00, 0 0 4px #0ff; font-family: 'Share Tech Mono', monospace;">DINO APP</h1>
+      <p style="color: #fff; font-size: 1.1rem;">Embrace the spike. Score only blossoms when you collide with cacti. Tap or click to jump!</p>
+      <nav><a href="/" style="color: #0ff;">← Back to Home</a></nav>
+      <section style="max-width: 100%; overflow: hidden;">
+        <div style="position: relative; max-width: 600px; margin: 0 auto;">
+          <canvas id="dino-canvas" width="600" height="200" style="background: #222; border: 2px solid #f00; width: 100%; height: auto; display: block; touch-action: none;"></canvas>
+        </div>
+        <p id="dino-status" style="color: #ff0; margin-top: 1rem; text-align: center;">Tap or press space to begin. Smack the cactus to thrive!</p>
+      </section>
+    </main>
+    <script src="/static/script.js" defer></script>
+    <script src="/static/dino.js" defer></script>
+  </body>
+</html>

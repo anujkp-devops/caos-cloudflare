@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAOS IS LIFE - Schedule</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 style="color: #fff; text-shadow: 0 0 8px #0ff, 0 0 4px #ff0; font-family: 'Share Tech Mono', monospace;">SCHEDULE APP</h1>
+      <p style="color: #fff; font-size: 1.1rem;">To-do triumph is measured in strategic procrastination.</p>
+      <nav><a href="/" style="color: #f0f;">← Back to Home</a></nav>
+      <section>
+        <form id="task-form">
+          <label for="task-input" style="color: #ff0;">What task shall we delay?</label>
+          <input id="task-input" autocomplete="off" style="background: #222; color: #fff; border: 1px solid #ff0;" />
+          <button type="submit" style="background: #0ff; color: #000;">Add Task</button>
+        </form>
+        <p id="score" style="color: #0f0;">Score: 0</p>
+        <ul id="task-list" style="margin-top: 1rem; display: grid; gap: 1rem;"></ul>
+      </section>
+    </main>
+    <script src="/static/script.js" defer></script>
+    <script src="/static/schedule.js" defer></script>
+  </body>
+</html>

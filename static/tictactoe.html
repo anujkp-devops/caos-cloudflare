@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAOS IS LIFE - Tic Tac Toe</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 style="color: #fff; text-shadow: 0 0 8px #0ff, 0 0 4px #f0f; font-family: 'Share Tech Mono', monospace;">TIC TAC TOE</h1>
+      <p style="color: #fff; font-size: 1.1rem;">Classic Tic-Tac-Toe, but you only win when the computer triumphs. Sabotage yourself brilliantly.</p>
+      <nav><a href="/" style="color: #ff0;">← Back to Home</a></nav>
+      <section>
+        <div id="board" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; max-width: 320px; margin: 1rem auto; background: #222; border: 2px solid #0ff; padding: 0.5rem;"></div>
+        <p id="tictactoe-status" style="color: #f0f; text-align: center;">You are X. Computer is O. Try not to win.</p>
+        <div style="text-align: center; margin-top: 1rem;">
+          <button id="reset" style="background: #ff0; color: #000;">Reset the torment</button>
+        </div>
+        <div id="popup" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.9); align-items:center; justify-content:center; z-index:1000;">
+          <div style="background:#222; border:2px solid #ff0; border-radius:16px; padding:2rem; text-align:center; color:#fff; min-width:260px;">
+            <div id="popup-icon" style="font-size:3rem; margin-bottom:1rem;"></div>
+            <div id="popup-text" style="font-size:1.3rem; margin-bottom:1rem;"></div>
+            <button onclick="window.location.reload()" style="background:#0ff; color:#000; margin-right:1rem;">Play Again</button>
+            <button onclick="window.location.href='/'" style="background:#ff0; color:#000;">Home Page</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/static/script.js" defer></script>
+    <script src="/static/tictactoe.js" defer></script>
+  </body>
+</html>

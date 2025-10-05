@@ -1,12 +1,33 @@
-/target
-/dist
-**/*.rs.bk
-Cargo.lock
-bin/
-pkg/
-wasm-pack.log
-worker/
+# Dependencies
 node_modules/
-.cargo-ok
-/__target__
-/env
+
+# Build outputs
+dist/
+__target__/
+
+# Python virtual environment (not needed anymore)
+env/
+venv/
+*.pyc
+__pycache__/
+
+# Wrangler
+worker/
+.wrangler/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+
